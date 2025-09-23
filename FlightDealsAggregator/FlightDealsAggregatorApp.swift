@@ -11,7 +11,8 @@ import SwiftUI
 struct FlightDealsAggregatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlightsView()
+                .preferredColorScheme(.light)
         }
     }
 }
