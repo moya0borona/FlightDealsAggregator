@@ -50,7 +50,7 @@ struct FlightsView: View {
                     .padding(.top, 10)
                     .padding(.bottom)
                     .background(Color.blue.opacity(0.3))
-                    
+                    Spacer()
                     ZStack(alignment: .top) {
                         Color.clear.frame(height: 0)
                         if viewModel.isLoading {
