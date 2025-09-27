@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlightRow: View {
     let flight: Flight
-    
+
     var body: some View {
         HStack {
             VStack(alignment: .leading) {

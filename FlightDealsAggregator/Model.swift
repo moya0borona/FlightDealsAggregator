@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Flight: Identifiable, Codable {
+struct Flight: Identifiable, Codable, Equatable {
     var id: String { "\(destination)-\(flightNumber)-\(departureAt)" }
     let destination: String
     let origin: String 
