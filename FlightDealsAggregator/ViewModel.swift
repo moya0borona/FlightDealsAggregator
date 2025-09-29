@@ -17,10 +17,16 @@ class FlightsViewModel: ObservableObject {
     @Published var destination: String = ""
     @Published var departDate: Date = Date()
     
-    private let service = FlightService()
+    private let repository: FlightRepository
+    
+    init(repository: FlightRepository = FlightRepository()) {
+        self.repository = repository
+        setupBindings()
+    }
+    
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    private func setupBindings() {
         Publishers.CombineLatest3($origin, $destination, $departDate)
             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
             .sink { [weak self] origin, destination, date in
@@ -32,35 +38,34 @@ class FlightsViewModel: ObservableObject {
     func searchFlights(origin: String, destination: String, departDate: Date) async {
         guard origin.count == 3 else { return }
         
-             isLoading = true
-             errorMessage = nil
-
+        isLoading = true
+        errorMessage = nil
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         let dateString = formatter.string(from: departDate)
         
         do {
-            flights = try await service.fetchFlights(
+            let result = try await repository.getFlights(
                 origin: origin.uppercased(),
-                destination: destination.uppercased().isEmpty ? "-" : destination.uppercased(),
+                destination: destination.isEmpty ? "-" : destination.uppercased(),
                 departDate: dateString
             )
-       
+            flights = result
         } catch {
-            errorMessage = "Ошибка: \(error.localizedDescription)"
             flights = []
+            errorMessage = error.localizedDescription
         }
+        
         isLoading = false
-
     }
-}
-
-extension FlightsViewModel {
+    
     func swapOriginDestination() {
         let temp = origin
         origin = destination
         destination = temp
     }
 }
+
 
 
