@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4903D3042E8B200A00BF071E /* FlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4903D3032E8B200A00BF071E /* FlightRepository.swift */; };
 		4920BDF42E8359EF007BB3F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920BDE62E8359EF007BB3F1 /* Preview Assets.xcassets */; };
 		4920BDF52E8359EF007BB3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920BDE82E8359EF007BB3F1 /* Assets.xcassets */; };
 		4920BDF72E8359EF007BB3F1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920BDE92E8359EF007BB3F1 /* CameraView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4903D3032E8B200A00BF071E /* FlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepository.swift; sourceTree = "<group>"; };
 		4920BDE62E8359EF007BB3F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4920BDE82E8359EF007BB3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4920BDE92E8359EF007BB3F1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				4920BDEB2E8359EF007BB3F1 /* FlightDetailView.swift */,
 				4920BDEC2E8359EF007BB3F1 /* FlightRow.swift */,
 				4920BDED2E8359EF007BB3F1 /* FlightService.swift */,
+				4903D3032E8B200A00BF071E /* FlightRepository.swift */,
 				4920BDEE2E8359EF007BB3F1 /* FlightsView.swift */,
 				4920BDEF2E8359EF007BB3F1 /* Info.plist */,
 				4920BDF02E8359EF007BB3F1 /* Model.swift */,
@@ -183,6 +186,7 @@
 				4920BDFB2E8359EF007BB3F1 /* FlightService.swift in Sources */,
 				4920BDFC2E8359EF007BB3F1 /* FlightsView.swift in Sources */,
 				4920BDFD2E8359EF007BB3F1 /* Model.swift in Sources */,
+				4903D3042E8B200A00BF071E /* FlightRepository.swift in Sources */,
 				4920BDFE2E8359EF007BB3F1 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

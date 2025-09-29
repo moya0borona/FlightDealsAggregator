@@ -74,6 +74,7 @@ struct FlightsView: View {
                                                 .cornerRadius(10)
                                         }
                                         .frame(maxWidth: .infinity)
+                                        .frame(height: cellHeight)
                                         .offset(y: showFlights ? CGFloat(index) * (cellHeight + spacing) : UIScreen.main.bounds.height)
                                         .zIndex(Double(10 - index))
                                         .animation(
@@ -92,6 +93,7 @@ struct FlightsView: View {
                                                     .background(Color.white)
                                                     .cornerRadius(10)
                                             }
+                                            .frame(height: cellHeight)
                                         }
                                     }
                                     .padding(.top, CGFloat(min(viewModel.flights.count, 10)) * (cellHeight + spacing))
