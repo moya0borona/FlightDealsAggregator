@@ -131,15 +131,6 @@ struct FlightsView: View {
             .onChange(of: viewModel.flights) { _ in
                 Task { await animateFlights() }
             }
-            .onChange(of: viewModel.origin) { _ in
-                Task { await animateFlights() }
-            }
-            .onChange(of: viewModel.destination) { _ in
-                Task { await animateFlights() }
-            }
-            .onChange(of: viewModel.departDate) { _ in
-                Task { await animateFlights() }
-            }
         }
     }
     
