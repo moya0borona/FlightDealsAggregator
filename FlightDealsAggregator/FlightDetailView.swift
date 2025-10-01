@@ -25,12 +25,15 @@ struct FlightDetailView: View {
             if let returnAt = flight.returnAt {
                 Text("Возврат: \(returnAt)")
             }
-            
+            Divider()
             Spacer()
         }
         .padding()
-        .background(backgroundColor)
-        .cornerRadius(20)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(backgroundColor)
+                .padding(.horizontal, 8)
+        )
     }
     
     private var titleColor: Color {
