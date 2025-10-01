@@ -85,7 +85,7 @@ struct FlightsView: View {
                                             value: showFlights
                                         )
                                     }
-                                    VStack(spacing: 2) {
+                                    VStack(spacing: 4) {
                                         ForEach(viewModel.flights.dropFirst(10)) { flight in
                                             NavigationLink(destination: FlightDetailView(flight: flight)) {
                                                 FlightRow(flight: flight)
