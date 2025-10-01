@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4903D3042E8B200A00BF071E /* FlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4903D3032E8B200A00BF071E /* FlightRepository.swift */; };
+		4909334A2E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png in Resources */ = {isa = PBXBuildFile; fileRef = 490933492E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png */; };
+		4909334B2E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png in Resources */ = {isa = PBXBuildFile; fileRef = 490933482E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png */; };
 		4920BDF42E8359EF007BB3F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920BDE62E8359EF007BB3F1 /* Preview Assets.xcassets */; };
 		4920BDF52E8359EF007BB3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920BDE82E8359EF007BB3F1 /* Assets.xcassets */; };
 		4920BDF72E8359EF007BB3F1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920BDE92E8359EF007BB3F1 /* CameraView.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		4903D3032E8B200A00BF071E /* FlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepository.swift; sourceTree = "<group>"; };
+		490933482E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png"; sourceTree = "<group>"; };
+		490933492E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png"; sourceTree = "<group>"; };
 		4920BDE62E8359EF007BB3F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4920BDE82E8359EF007BB3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4920BDE92E8359EF007BB3F1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			children = (
 				4920BDFF2E835A31007BB3F1 /* Simulator Screenshot - iPhone 16 Pro - 2025-09-24 at 01.39.44.png */,
 				4920BE012E835A39007BB3F1 /* Simulator Screenshot - iPhone 16 Pro - 2025-09-24 at 01.40.02.png */,
+				490933482E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png */,
+				490933492E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4920BE002E835A31007BB3F1 /* Simulator Screenshot - iPhone 16 Pro - 2025-09-24 at 01.39.44.png in Resources */,
+				4909334A2E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.09.40.png in Resources */,
+				4909334B2E8DC21B00EE75EC /* Simulator Screenshot - iPhone 16 Pro - 2025-10-01 at 23.08.24.png in Resources */,
 				4920BDF42E8359EF007BB3F1 /* Preview Assets.xcassets in Resources */,
 				4920BDF52E8359EF007BB3F1 /* Assets.xcassets in Resources */,
 				4920BE022E835A39007BB3F1 /* Simulator Screenshot - iPhone 16 Pro - 2025-09-24 at 01.40.02.png in Resources */,
